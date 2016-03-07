@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2006 - 2012 CTPP Team
+ * Copyright (c) 2006 - 2016 CTPP Team
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -1153,7 +1153,7 @@ int CTPP2::include_dirs(AV * aIncludeDirs)
 			CHAR_8 szTMPBuf[1024 + 1];
 			snprintf(szTMPBuf, 1024, "ERROR in include_dirs(): Need STRING at array index %d", int(iI));
 			oCTPPError = CTPPError("", szTMPBuf, CTPP_DATA_ERROR | CTPP_LOGIC_ERROR, 0, 0, 0);
-			warn(szTMPBuf);
+			warn("ERROR in include_dirs(): Need STRING at array index %d", int(iI));
 			return -1;
 		}
 

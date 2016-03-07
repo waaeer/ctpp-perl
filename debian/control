@@ -1,0 +1,21 @@
+Source: libhtml-ctpp2-perl
+Section: perl
+Priority: optional
+Maintainer: Ivan Panchenko <wao@mail.ru>
+Build-Depends: debhelper (>= 9.20120312~),
+ perl,
+ ctpp
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/HTML-CTPP2
+
+Package: libhtml-ctpp2-perl
+Architecture: any
+Depends: ${misc:Depends}, ${perl:Depends}, ${shlibs:Depends}, ctpp
+Description: Perl interface for CTPP2 library
+ HTML::CTPP2 is very similar to well-known Sam Tregar's HTML::Template but
+ works in 22 - 25 times faster and contains extra functionality. CTPP2
+ template language dialect contains 10 operators: <TMPL_var>, <TMPL_if>,
+ <TMPL_elsif>, <TMPL_else>, <TMPL_unless>, <TMPL_loop>, <TMPL_foreach>,
+ <TMPL_udf>, <TMPL_include> and <TMPL_comment>.
+ .
+ This description was automagically extracted from the module by dh-make-perl.

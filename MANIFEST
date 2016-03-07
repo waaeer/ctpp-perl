@@ -41,6 +41,10 @@ typemap
 math_expr.tmpl
 perlobject.map
 MANIFEST
+LICENSE
+README.md
+META.json
+META.yml
 Makefile.PL
 Changes
 ppport.h

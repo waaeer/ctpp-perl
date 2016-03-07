@@ -131,7 +131,7 @@ else
 		'VERSION_FROM' 	=> 'lib/HTML/CTPP2.pm',
 		'LIBS'		=> "-L$CTPP2LibDir -L/usr/lib -lm -lctpp2 $STDCPP",
 		'DEFINE'		=> '-fexceptions -O2 -Wno-deprecated ',
-		'INC'		=> "-I$CTPP2IncludeDir -I/usr/include -I/usr/local/include -I. ",
+		'INC'		=> "-I$CTPP2IncludeDir -I/usr/include  -I. ",
 		'CC'		=> $CXX,
 		'LD'		=> $CC,
 		'XSOPT'		=> '-C++',
