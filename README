@@ -1,5 +1,4 @@
-HTML-CTPP2 version 2.5.9
-========================
+HTML-CTPP2 version 2.8.2
 
 HTML::CTPP2 - Perl interface for CTPP2 library
 
@@ -40,7 +39,7 @@ see http://www.cmake.org/
 
 COPYRIGHT AND LICENCE
 
-  Copyright (c) 2006 - 2009 CTPP Team
+  Copyright (c) 2006 - 2016 CTPP Team
 
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
