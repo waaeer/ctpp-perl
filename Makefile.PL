@@ -137,6 +137,6 @@ else
 		'XSOPT'		=> '-C++',
 		'clean'		=> { 'FILES' => '*.ct2' },
 		'TYPEMAPS'		=> ['perlobject.map'],
-		'AUTHOR'            => 'Andrei V. Shetuhin <reki@reki.ru>'
+		'AUTHOR'            => 'Andrei V. Shetuhin <reki@reki.ru>, Ivan E.Panchenko <wao@mail.ru>'
 	);
 }
