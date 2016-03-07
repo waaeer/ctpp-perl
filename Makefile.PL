@@ -116,7 +116,7 @@ if ($^O eq 'MSWin32')
 		'XSOPT'			=> '-C++',
 		'clean'			=> { 'FILES' => '*.ct2' },
 		'TYPEMAPS'		=> ['perlobject.map'],
-		'AUTHOR'		=> 'Andrei V. Shetuhin <reki@reki.ru>'
+		'AUTHOR'		=> 'Andrei V. Shetuhin <reki@reki.ru>, Ivan E. Panchenko <wao@mail.ru>'
 	);
 }
 else
@@ -125,6 +125,7 @@ else
 	unless ($CTPP2LibDir) { NeedToInstallCTPP("Cannot find shared library file libctpp2.so"); exit; }
 
 	WriteMakefile(
+		'NO_META'	=> 1,
 		'NAME'		=> 'HTML::CTPP2',
 		'VERSION_FROM' 	=> 'lib/HTML/CTPP2.pm',
 		'LIBS'		=> "-L$CTPP2LibDir -L/usr/lib -lm -lctpp2 $STDCPP",
