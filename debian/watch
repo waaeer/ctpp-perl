@@ -1,2 +1,0 @@
-version=3
-https://metacpan.org/release/HTML-CTPP2   .*/HTML-CTPP2-v?(\d[\d.-]*)\.(?:tar(?:\.gz|\.bz2)?|tgz|zip)$
