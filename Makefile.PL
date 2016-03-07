@@ -6,14 +6,12 @@ my @IncludeDirs = ($ENV{'CTPP2_INCLUDE'},
                    "/usr/local/include/ctpp2",
                    "/usr/include/ctpp2",
                    "/opt/include/ctpp2",
-		   "/opt/REKIctpp2/include/ctpp2",
                    "/usr/local/ctpp2/include");
 
 my @LibDirs     = ($ENV{'CTPP2_LIB'},
                    "/usr/local/lib",
                    "/usr/lib",
                    "/opt/lib",
-		   "/opt/REKIctpp2/lib",
                    "/usr/local/ctpp2/lib");
 
 sub NeedToInstallCTPP
@@ -137,10 +135,6 @@ else
 		'XSOPT'		=> '-C++',
 		'clean'		=> { 'FILES' => '*.ct2' },
 		'TYPEMAPS'		=> ['perlobject.map'],
-<<<<<<< HEAD
-		'AUTHOR'            => 'Andrei V. Shetuhin <reki@reki.ru>'
-=======
 		'AUTHOR'            => 'Andrei V. Shetuhin <reki@reki.ru>, Ivan E.Panchenko <wao@mail.ru>'
->>>>>>> upstream
 	);
 }
