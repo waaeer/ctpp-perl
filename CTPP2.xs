@@ -88,6 +88,11 @@ using namespace CTPP;
 #define C_TEMPLATE_SOURCE 2
 
 #define C_INIT_SYM_PREFIX "_init"
+#define PERL_VERSION_ATLEAST(a,b,c)             \
+  (PERL_REVISION > (a)                      \
+   || (PERL_REVISION == (a)                 \
+       && (PERL_VERSION > (b)                   \
+           || (PERL_VERSION == (b) && PERL_SUBVERSION >= (c)))))
 
 //
 // PerlLogger
@@ -867,11 +872,13 @@ int CTPP2::param(SV * pParams, CTPP::CDT * pCDT, CTPP::CDT * pUplinkCDT, const S
 					return param((SV*)SvSTASH(pParams), pCDT, pUplinkCDT, sKey, iProcessed);
 				}
 #ifdef SvOURSTASH // Perl 5.8.9+
+#if ! PERL_VERSION_ATLEAST (5,21,7)
 				// Our stash
 				else if (SvPAD_OUR(pParams))
 				{
 					return param((SV*)SvOURSTASH(pParams), pCDT, pUplinkCDT, sKey, iProcessed);
 				}
+#endif
 #endif
 				// Stub for unknown Perl types
 				else
