@@ -417,6 +417,7 @@ INT_32 PerlLogger::WriteLog(const UINT_32  iPriority,
                             const UINT_32  iStringLen)
 {
 	warn("ERROR: %.*s", iStringLen, szString);
+	return 0;
 }
 
 //
