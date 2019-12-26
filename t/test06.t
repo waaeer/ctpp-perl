@@ -5,7 +5,7 @@
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test::More tests => 3;
+use Test::More tests => 2;
 BEGIN { use_ok('HTML::CTPP2') };
 
 use strict;
