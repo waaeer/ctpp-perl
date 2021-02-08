@@ -39,6 +39,7 @@ hello.tmpl
 lib/HTML/CTPP2.pm
 LICENSE
 Makefile.PL
+MANIFEST
 math_expr.tmpl
 perl-HTML-CTPP2.spec
 perlobject.map
