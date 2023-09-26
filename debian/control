@@ -5,7 +5,7 @@ Maintainer: Ivan Panchenko <wao@mail.ru>
 Build-Depends: debhelper (>= 9.20120312~),
  perl,
  ctpp
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: https://metacpan.org/release/HTML-CTPP2
 
 Package: libhtml-ctpp2-perl
